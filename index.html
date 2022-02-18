@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/03acd404d9.js" crossorigin="anonymous"></script>
+    <!--custom css-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign up Form</title>
+</head>
+<body>
+    <div class="layout-container">
+
+    <div class="image-sidebar">
+        <div class="bgimg-container">
+            <img class="bgimg" src="/img/Elemental.png" alt="Elemental Logo">
+        </div>
+        <i class="scroll-alert fas fa-chevron-down"></i>
+    </div>
+
+    <main class="main-content">
+        <p class="blurb">
+            This is not a real service! You know you need something like this in your life to realise your deepest dreams.
+            Sign up <em>now</em> to get started!
+            <br><br>
+            You <em>know</em> you want to!
+        </p>
+
+        <!--There has got to be a better way to do this form-->
+        <form action="" class="signup-form">
+            <!--First form section-->
+            <div class="outer-form-section">
+                <div class="inner-form-section">
+                    <label for="first-name" class="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" class="first-name-input" id="first-name" required placeholder="Enter your first name...">
+                </div>
+                <div class="inner-form-section">
+                    <label for="last-name" class="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" class="last-name-input" id="last-name" required placeholder="Enter your last name...">
+                </div>    
+            </div>
+        <!--Form section 2-->
+            <div class="outer-form-section">
+                <div class="inner-form-section">
+                    <label for="email" class="email">EMAIL ADDRESS</label>
+                    <input type="text" name="email" id="email" class="email-input" required placeholder="Enter your email address...">
+                </div>
+                <div class="inner-form-section">
+                    <label for="phone-number" class="phone-number">PHONE NUMBER</label>
+                    <input type="text" name="phone-number" id="phone-number" class="phone-number-input" required placeholder="Enter your phone number...">
+                </div>    
+            </div>
+        <!--form section 3-->
+        <div class="outer-form-section">
+            <div class="inner-form-section">
+                <label for="password" class="email">PASSWORD</label>
+                <input type="password" name="password" id="password" class="password-input" required placeholder="Enter your password...">
+            </div>
+            <div class="inner-form-section">
+                <label for="confirm-password"  class="confirm-password" >CONFIRM PASSWORD</label>
+                <input type="password" name="confirm-password" class="confirm-password-input" required placeholder="Confirm your password...">
+            </div>    
+        </div>
+        <div class="outer-form-section">
+            
+        </div>
+    </form>
+    <div class="form-button">
+        <button class="signup-button" type="submit">Create Account</button>
+        <p class="already-signed-up">Already have an account? <span class="login">Log in?</span></p>
+    </div>
+    </main>
+    
+    </div>  
+    <footer> 
+        <p class="copyright"></p>
+    </footer>
+
+       
+    <script src="app.js"></script>
+</body>
+</html>

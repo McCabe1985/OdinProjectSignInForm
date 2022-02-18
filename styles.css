@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* side bar*/
+.image-sidebar {
+    background-image: url(img/bgimg.jpg);
+    background-size: cover;
+    background-color: black;
+    height: 95vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimg-container {
+    width: 100vw;
+    background: rgba(23,23,23,0.5);
+    display: flex;
+    justify-content: center;
+}
+
+
+.scroll-alert-message {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.scroll-alert {
+    font-size: 6rem;
+    color: white;
+    margin-top: 4rem;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  /* Main content */
+.main-content {
+    background-color: DEE3E9;
+    font-weight: 500;
+    margin: 1rem 3rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:95vh;
+}
+/* the form */
+.signup-form {
+    box-shadow: 0px 2px 6px 3px rgba(0,0,0,0.2);
+    padding-bottom: 1rem;
+    width: 100vw;
+    margin-top: 2rem;
+}
+
+.outer-form-section {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-form-section {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 0.6rem;
+}
+
+input {
+    padding: 0.1rem;
+    width: 90%;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-button {
+    height: 2rem;
+    width: 9rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: #596D48;
+    border-radius: 0.2rem;
+    color: white;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+
+}
+
+.already-signed-up {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.login {
+    color:#596D48;
+}
+
+.copyright {
+    background-color:#282e24;
+    width: 100vw;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+  /* media quries */
+
+  @media only screen and (min-width: 800px) {
+      .layout-container {
+          display: flex;
+          width: 100%;
+      }
+
+      .image-sidebar{
+          width: 40vh;
+      }
+
+      .bgimg-container {
+        width: 100%;
+    }
+
+    .scroll-alert {
+        display: none;
+    }
+
+      .main-content {
+          width: 80vw;
+          margin:0;
+          justify-content: flex-start;
+      }
+
+    .blurb {
+        padding: 4rem 4rem 0 2rem;
+    }
+
+      .signup-form {
+        width:100%;
+    }
+    
+    .outer-form-section {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 6rem;
+    }
+
+    .inner-form-section {
+        margin-right: 4rem;
+        justify-content: flex-start;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        box-shadow: inset 0px 0px 13px 1px rgba(0,0,0,0.1);
+        padding: 0.2rem;
+    }
+
+    .form-button {
+      align-self: flex-start;
+      margin-left: 1rem;
+    }
+
+
+  }
+
+   
